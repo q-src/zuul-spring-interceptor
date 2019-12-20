@@ -1,0 +1,5 @@
+rootProject.name='zuul-spring-interceptor'
+
+include 'library'
+include 'example-backend'
+include 'example-proxy'
