@@ -1,7 +1,11 @@
 server:
   port: 8090
-zuul:
-  routes:
-    foos:
-      path: /**
-      url: http://localhost:8080/
+
+spring:
+  cloud:
+    gateway:
+      routes:
+      - id: api
+        uri: http://localhost:8080/
+        predicates:
+          - Path=/api/**
