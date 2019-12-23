@@ -4,6 +4,7 @@ plugins {
 }
 
 dependencies {
+    implementation project(':library')
     implementation 'org.springframework.boot:spring-boot-starter-webflux:2.2.2.RELEASE'
     implementation 'org.springframework.cloud:spring-cloud-starter-gateway:2.2.1.RELEASE'
     implementation 'org.springframework.boot:spring-boot-starter-webflux:2.2.2.RELEASE'
